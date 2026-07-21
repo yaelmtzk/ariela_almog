@@ -1,0 +1,144 @@
+@media(max-width:980px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 34px
+    }
+
+    .service:nth-child(4) {
+        border-left: 0
+    }
+
+    .mindsets-layout {
+        grid-template-columns: 1fr
+    }
+
+    .mindsets-copy {
+        padding-right: 0
+    }
+}
+
+@media(max-width:720px) {
+    .container {
+        width: min(calc(100% - 36px), var(--max))
+    }
+
+    .section {
+        padding: 64px 0
+    }
+
+    .menu-toggle {
+        display: block
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 84px;
+        right: 18px;
+        left: 18px;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+        background: var(--paper);
+        border: 1px solid var(--line)
+    }
+
+    .main-nav.open {
+        display: flex
+    }
+
+    .main-nav a {
+        padding: 14px 20px
+    }
+
+    .hero-grid {
+        min-height: auto;
+        grid-template-columns: 1fr
+    }
+
+    .hero-copy {
+        padding: 64px 0 46px
+    }
+
+    .hero h1 {
+        font-size: clamp(3.15rem, 15vw, 5.2rem)
+    }
+
+    .hero-media {
+        min-height: 360px;
+        margin-inline: -18px
+    }
+
+    .about-grid {
+        grid-template-columns: 98px 1fr;
+        gap: 26px;
+        align-items: start
+    }
+
+    .portrait {
+        width: 98px
+    }
+
+    .about h2 {
+        font-size: 2.25rem
+    }
+
+    .about-grid p {
+        grid-column: 1/-1
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px
+    }
+
+    .service {
+        min-height: 0;
+        padding: 0;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 38px 1fr;
+        gap: 12px;
+        align-items: start
+    }
+
+    .service+.service {
+        border-left: 0
+    }
+
+    .icon {
+        margin: -5px 0 0;
+        font-size: 2rem
+    }
+
+    .mindsets-copy {
+        padding: 62px 0
+    }
+
+    .comparison-column {
+        padding: 0 16px
+    }
+
+    .comparison h3 {
+        font-size: 1.25rem
+    }
+
+    .comparison li {
+        font-size: .9rem
+    }
+
+    blockquote {
+        min-height: 190px
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        align-items: start
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 50px
+    }
+}

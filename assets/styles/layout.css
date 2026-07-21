@@ -1,0 +1,297 @@
+/* ========================================
+   CONTAINER & SECTIONS
+   ======================================== */
+
+.container {
+    width: min(calc(100% - 48px), var(--max));
+    margin-inline: auto
+}
+
+.section {
+    padding: 96px 0
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255, 253, 249, .94);
+    border-bottom: 1px solid rgba(232, 223, 214, .75);
+    backdrop-filter: blur(12px)
+}
+
+.nav-wrap {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand {
+    color: var(--terracotta);
+    font-family: "Italianno", cursive;
+    font-size: 2.7rem;
+    line-height: 1;
+    text-decoration: none
+}
+
+.main-nav {
+    display: flex;
+    gap: 42px
+}
+
+.main-nav a {
+    font-size: .95rem;
+    text-decoration: none
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: var(--terracotta)
+}
+
+.menu-toggle {
+    display: none;
+    width: 44px;
+    padding: 8px 5px;
+    border: 0;
+    background: transparent
+}
+
+.menu-toggle span:not(.sr-only) {
+    display: block;
+    height: 2px;
+    margin: 6px 0;
+    background: var(--ink)
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    background: var(--cream)
+}
+
+.hero-grid {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: stretch
+}
+
+.hero-copy {
+    align-self: center;
+    padding: 88px 68px 88px 0
+}
+
+.hero h1 {
+    max-width: 640px;
+    margin-bottom: 30px;
+    font-size: clamp(3.4rem, 6vw, 6.7rem)
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--terracotta);
+    font-family: "Italianno", cursive;
+    font-size: 1.07em
+}
+
+.hero-copy p {
+    max-width: 510px;
+    margin-bottom: 34px;
+    font-size: 1.08rem
+}
+
+.hero-media {
+    min-height: 650px
+}
+
+.hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+
+.about-grid {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 72px;
+    align-items: center
+}
+
+.portrait {
+    width: 250px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover
+}
+
+.about p {
+    max-width: 690px;
+    font-size: 1.05rem
+}
+
+/* ========================================
+   SERVICES SECTION
+   ======================================== */
+
+.services {
+    padding-top: 44px
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 52px
+}
+
+.service {
+    min-height: 175px;
+    padding: 10px 24px;
+    text-align: center
+}
+
+.service+.service {
+    border-left: 1px solid var(--line)
+}
+
+.icon {
+    margin-bottom: 22px;
+    color: var(--olive);
+    font-family: Georgia, serif;
+    font-size: 2.3rem
+}
+
+.service h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: .98rem;
+    font-weight: 500;
+    line-height: 1.45
+}
+
+/* ========================================
+   MINDSETS SECTION
+   ======================================== */
+
+.mindsets {
+    padding: 0;
+    background: var(--cream)
+}
+
+.mindsets-layout {
+    display: grid;
+    grid-template-columns: 1.8fr .8fr
+}
+
+.mindsets-copy {
+    padding: 78px 70px 76px 0
+}
+
+.mindsets-copy h2 {
+    text-align: center
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.comparison-column {
+    padding: 0 48px
+}
+
+.comparison-column+.comparison-column {
+    border-left: 1px solid var(--line)
+}
+
+.comparison h3 {
+    margin-bottom: 4px;
+    font-size: 1.55rem
+}
+
+.comparison ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.comparison li {
+    margin: 8px 0
+}
+
+.comparison .preferred h3 {
+    color: var(--terracotta)
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: .93rem
+}
+
+blockquote {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 68px 46px;
+    background: var(--olive);
+    color: #fff;
+    font-family: "Italiana", serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    line-height: 1.4;
+    text-align: center
+}
+
+/* ========================================
+   CONTACT SECTION & FOOTER
+   ======================================== */
+
+.contact {
+    padding-bottom: 46px
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center
+}
+
+.contact-grid h2 {
+    max-width: 780px;
+    margin-bottom: 14px
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 54px;
+    margin-top: 70px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9rem
+}
+
+.contact-details a {
+    text-decoration: none
+}
+
+footer {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .9rem
+}
